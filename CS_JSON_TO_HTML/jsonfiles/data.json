@@ -1,0 +1,83 @@
+{
+    "company": {
+        "name": "MSIT Solutions",
+        "location": {
+            "city": "Pune",
+            "state": "Maharashtra",
+            "country": "India"
+        },
+        "departments": [
+            {
+                "id": "D001",
+                "name": "Engineering",
+                "manager": {
+                    "id": "E1001",
+                    "name": "Sudam Joshi",
+                    "email": "Sudam.joshi@MSIT.com"
+                },
+                "teams": [
+                    {
+                        "teamId": "T101",
+                        "teamName": "Backend Development",
+                        "members": [
+                            {
+                                "employeeId": "E2001",
+                                "name": "Mahesh Sabnis",
+                                "role": "Senior Technical Trainer",
+                                "skills": [ "Java", "Spring Boot", "REST APIs" ],
+                                "projects": [
+                                    {
+                                        "projectId": "P5001",
+                                        "name": "Inventory Management System",
+                                        "status": "Active",
+                                        "startDate": "2025-01-15",
+                                        "endDate": null,
+                                        "resources": {
+                                            "servers": [ "srv-01", "srv-02" ],
+                                            "databases": [
+                                                {
+                                                    "type": "MS-SQL Server",
+                                                    "version": "14.2",
+                                                    "host": "db.MSIT.com"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "policies": {
+            "leavePolicy": {
+                "annualLeave": 20,
+                "sickLeave": 10,
+                "workFromHome": true
+            },
+            "securityPolicy": {
+                "passwordExpiryDays": 90,
+                "twoFactorAuth": true,
+                "dataEncryption": {
+                    "enabled": true,
+                    "algorithm": "AES-256"
+                }
+            }
+        },
+        "auditLogs": [
+            {
+                "timestamp": "2025-08-21T10:45:00Z",
+                "action": "Login",
+                "user": "mahesh.sabnis",
+                "ip": "192.168.1.101"
+            },
+            {
+                "timestamp": "2025-08-21T11:00:00Z",
+                "action": "Access Project",
+                "user": "mahesh.sabnis",
+                "projectId": "P5001"
+            }
+        ]
+    }
+}
